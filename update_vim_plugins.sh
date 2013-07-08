@@ -4,6 +4,7 @@
 ##
 # bundles to remove then update/install
 git_bundles=(
+    git://github.com/SirVer/ultisnips.git
     git://github.com/godlygeek/tabular.git
     git://github.com/groenewege/vim-less.git
     git://github.com/elzr/vim-json.git
@@ -18,7 +19,6 @@ git_bundles=(
     git://github.com/tpope/vim-markdown.git
     git://github.com/tpope/vim-repeat.git
     git://github.com/tpope/vim-surround.git
-    git://github.com/Valloric/YouCompleteMe.git
 )
 
 cd $HOME/.vim/bundle
