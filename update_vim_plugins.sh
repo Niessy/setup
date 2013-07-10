@@ -20,6 +20,7 @@ git_bundles=(
     git://github.com/tpope/vim-repeat.git
     git://github.com/tpope/vim-surround.git
     git://github.com/Shutnik/jshint2.vim.git
+    git://github.com/jpalardy/vim-slime.git
 )
 
 cd $HOME/.vim/bundle
