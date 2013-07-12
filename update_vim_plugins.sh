@@ -1,6 +1,6 @@
 #!/bin/bash
 ##  Updates or install specified git bundles
-##
+##  Will be changed over time possibly
 ##
 # bundles to remove then update/install
 git_bundles=(
@@ -15,12 +15,9 @@ git_bundles=(
     git://github.com/sickill/vim-pasta.git
     git://github.com/tomtom/tcomment_vim.git
     git://github.com/tpope/vim-fugitive.git
-    git://github.com/tpope/vim-git.git
-    git://github.com/tpope/vim-markdown.git
     git://github.com/tpope/vim-repeat.git
     git://github.com/tpope/vim-surround.git
     git://github.com/Shutnik/jshint2.vim.git
-    git://github.com/jpalardy/vim-slime.git
 )
 
 cd $HOME/.vim/bundle
