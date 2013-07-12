@@ -1,6 +1,6 @@
 #!/bin/bash
 # Simple setup.sh for configuring Ubuntu 12.04 LTS EC2 instance
-# for headless setup. 
+# for headless setup, or on other Linux environments.
 
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
@@ -20,9 +20,6 @@ npm install -g jshint
 # See: http://nodejs.org/api/repl.html#repl_repl
 sudo apt-get install -y rlwrap
 
-# Install emacs24
-# https://launchpad.net/~cassou/+archive/emacs
-
 # git pull and install dotfiles as well
 cd $HOME
 if [ -d ./dotfiles/ ]; then
@@ -36,7 +33,14 @@ git clone https://github.com/Niessy/dotfiles.git
 ln -sb dotfiles/.bash_profile .
 ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
-ln -s  dotfiles/.vim .
-ln -s  dotfiles/.vimrc .
-ln -s  dotfiles/.tmux.conf
+ln -sb  dotfiles/.vim .
+ln -sb  dotfiles/.vimrc .
+ln -sb  dotfiles/.tmux.conf
+
+# Z shell
+git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
+ln -sb  dotfiles/.zshrc .
+ln -sb  dotfiles/.zshrc_custom .
+chsh -s /bin/zsh
+
 
