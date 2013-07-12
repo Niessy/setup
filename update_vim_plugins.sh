@@ -10,7 +10,7 @@ git_bundles=(
     git://github.com/elzr/vim-json.git
     git://github.com/kchmck/vim-coffee-script.git
     git://github.com/kien/ctrlp.vim.git
-    git://github.com/pangloss/vim-javascript.git
+    git://github.com/jelera/vim-javascript-syntax.git
     git://github.com/scrooloose/nerdtree.git
     git://github.com/sickill/vim-pasta.git
     git://github.com/tomtom/tcomment_vim.git
